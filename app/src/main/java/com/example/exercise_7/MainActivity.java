@@ -56,25 +56,51 @@ public class MainActivity extends AppCompatActivity {
 
         answerOneBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+//                Button b = (Button)v;
+//                String buttonText = b.getText().toString();
+                if (validateAnswer(answerOneBtn.getText().toString())){
+                    pointCount += 1;
+                }else{
+                    livesCount -= 1;
+                }
+                updateScoreAndLives( pointCount, livesCount);
+                displayImage();
             }
         });
 
         answerTwoBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                if (validateAnswer(answerTwoBtn.getText().toString())){
+                    pointCount += 1;
+                }else{
+                    livesCount -= 1;
+                }
+                updateScoreAndLives( pointCount, livesCount);
+                displayImage();
             }
         });
 
         answerThreeBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                if (validateAnswer(answerThreeBtn.getText().toString())){
+                    pointCount += 1;
+                }else{
+                    livesCount -= 1;
+                }
+                updateScoreAndLives( pointCount, livesCount);
+                displayImage();
             }
         });
 
         answerFourBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                if (validateAnswer(answerFourBtn.getText().toString())){
+                    pointCount += 1;
+                }else{
+                    livesCount -= 1;
+                }
+                updateScoreAndLives( pointCount, livesCount);
+                displayImage();
             }
         });
     }
