@@ -201,10 +201,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void refreshData(){
         iconImage.setImageResource(R.drawable.question_mark);
-        answerOneBtn.setText("???");
-        answerTwoBtn.setText("???");
-        answerThreeBtn.setText("???");
-        answerFourBtn.setText("???");
+        answerOneBtn.setText(getString(R.string.QuestionMark));
+        answerTwoBtn.setText(getString(R.string.QuestionMark));
+        answerThreeBtn.setText(getString(R.string.QuestionMark));
+        answerFourBtn.setText(getString(R.string.QuestionMark));
         updateScoreAndLives(pointCount,livesCount);
         seconds = 0;
         handler.removeCallbacks(runnable);
@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void restart(){
         startBtn.setVisibility(View.VISIBLE);
-       livesCount = 5;
+        livesCount = 5;
         pointCount = 0;
         updateScoreAndLives(pointCount, livesCount);
     }
